@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_nav"
+    app:startDestination="@id/getstarted">
+
+    <fragment
+        android:id="@+id/getstarted"
+        android:name="com.bw.f22920.Views.Fragment_GetStarted"
+        android:label="fragment_getstarted"
+        tools:layout="@layout/fragment_getstarted" />
+
+    <dialog
+        android:id="@+id/bottomSheetDialog"
+        android:name="com.bw.f22920.Views.BottomSheetDialog"
+        android:label="bottom_sheet"
+        tools:layout="@layout/bottom_sheet">
+        <action
+            android:id="@+id/action_bottomSheetDialog_to_usualFrag"
+            app:destination="@id/usualFrag" />
+        <action
+            android:id="@+id/action_bottomSheetDialog_to_fragment_Sale"
+            app:destination="@id/fragment_Sale" />
+        <action
+            android:id="@+id/action_bottomSheetDialog_to_fragment_Clothes"
+            app:destination="@id/fragment_Clothes" />
+        <action
+            android:id="@+id/action_bottomSheetDialog_to_fragment_Fruits"
+            app:destination="@id/fragment_Fruits" />
+        <action
+            android:id="@+id/action_bottomSheetDialog_to_fragment_Coles"
+            app:destination="@id/fragment_Coles" />
+        <action
+            android:id="@+id/action_bottomSheetDialog_to_fragment_Meat"
+            app:destination="@id/fragment_Meat" />
+    </dialog>
+    <fragment
+        android:id="@+id/usualFrag"
+        android:name="com.bw.f22920.Views.Fragment_Usual"
+        android:label="fragment_usual"
+        tools:layout="@layout/fragment_usual" >
+        <action
+            android:id="@+id/action_usualFrag_to_fragment_Home"
+            app:destination="@id/fragment_Home" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_Sale"
+        android:name="com.bw.f22920.Views.Fragment_Sale"
+        android:label="fragment_sale"
+        tools:layout="@layout/fragment_sale" >
+        <action
+            android:id="@+id/action_fragment_Sale_to_fragment_Home"
+            app:destination="@id/fragment_Home" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_Clothes"
+        android:name="com.bw.f22920.Views.Fragment_Clothes"
+        android:label="fragment_clothes"
+        tools:layout="@layout/fragment_clothes" >
+        <action
+            android:id="@+id/action_fragment_Clothes_to_fragment_Home"
+            app:destination="@id/fragment_Home" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_Fruits"
+        android:name="com.bw.f22920.Views.Fragment_Fruits"
+        android:label="fragment_fruits"
+        tools:layout="@layout/fragment_fruits" >
+        <action
+            android:id="@+id/action_fragment_Fruits_to_fragment_Home"
+            app:destination="@id/fragment_Home" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_Coles"
+        android:name="com.bw.f22920.Views.Fragment_Coles"
+        android:label="fragment_coles"
+        tools:layout="@layout/fragment_coles" >
+        <action
+            android:id="@+id/action_fragment_Coles_to_fragment_Home"
+            app:destination="@id/fragment_Home" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_Meat"
+        android:name="com.bw.f22920.Views.Fragment_Meat"
+        android:label="fragment_meat"
+        tools:layout="@layout/fragment_meat" >
+        <action
+            android:id="@+id/action_fragment_Meat_to_fragment_Home"
+            app:destination="@id/fragment_Home" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_HomeSecond"
+        android:name="com.bw.f22920.Views.Fragment_HomeSecond"
+        android:label="fragment_homesecond"
+        tools:layout="@layout/fragment_homesecond" >
+        <action
+            android:id="@+id/action_fragment_HomeSecond_to_bottomSheetDialog"
+            app:destination="@id/bottomSheetDialog" />
+    </fragment>
+    <action android:id="@+id/action_global_fragment_HomeSecond" app:destination="@id/fragment_HomeSecond" />
+    <fragment
+        android:id="@+id/fragment_Home"
+        android:name="com.bw.f22920.Views.Fragment_Home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <dialog
+        android:id="@+id/bottomSheetCart"
+        android:name="com.bw.f22920.Views.BottomSheetCart"
+        android:label="bottomsheet_cart"
+        tools:layout="@layout/bottomsheet_cart" />
+    <dialog
+        android:id="@+id/bottomSheetCartHomeTwo"
+        android:name="com.bw.f22920.Views.BottomSheetCartHomeTwo"
+        android:label="bottom_sheet_cart_hometwo"
+        tools:layout="@layout/bottom_sheet_cart_hometwo" >
+        <action
+            android:id="@+id/action_bottomSheetCartHomeTwo_to_fragment_Home"
+            app:destination="@id/fragment_Home" />
+    </dialog>
+
+
+</navigation>

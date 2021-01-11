@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<me.himanshusoni.chatmessageview.ChatMessageView android:id="@+id/user_reply_minicart_automated_bubble"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    app:cmv_arrowGravity="start"
+    app:cmv_arrowMargin="3dp"
+    app:cmv_arrowPosition="right"
+    app:cmv_backgroundColor="#a1a1a1"
+    app:cmv_backgroundColorPressed="@color/gray"
+    app:cmv_contentPadding="10dp"
+    app:cmv_cornerRadius="10dp"
+    app:cmv_showArrow="false"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="20dp"
+    android:visibility="gone">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/user_reply_minicart_automated_itemlist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </me.himanshusoni.chatmessageview.ChatMessageView>
+
+
+

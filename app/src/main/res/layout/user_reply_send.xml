@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<me.himanshusoni.chatmessageview.ChatMessageView android:id="@+id/user_reply_send_bubble"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    app:cmv_arrowGravity="start"
+    app:cmv_arrowMargin="3dp"
+    app:cmv_arrowPosition="right"
+    app:cmv_backgroundColor="#a1a1a1"
+    app:cmv_backgroundColorPressed="@color/gray"
+    app:cmv_contentPadding="10dp"
+    app:cmv_cornerRadius="10dp"
+    app:cmv_showArrow="false"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_margin="20dp">
+
+        <TextView
+            android:id="@+id/user_reply_send_text"
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello, world" />
+
+    </me.himanshusoni.chatmessageview.ChatMessageView>
+
+
+
